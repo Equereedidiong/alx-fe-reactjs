@@ -1,3 +1,6 @@
+import Footer from './Footer.jsx'
+import MainContent from './MainContent.jsx'
+import Header from './Header.jsx';
 import WelcomeMessage from './components/WelcomeMessage.jsx'
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
@@ -31,6 +34,8 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
       <WelcomeMessage />
+      <Header />
+      <Footer />
     </>
   )
 }
