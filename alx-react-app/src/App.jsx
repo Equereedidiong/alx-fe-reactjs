@@ -36,6 +36,7 @@ function App() {
       <WelcomeMessage />
       <Header />
       <Footer />
+      <MainContent />
     </>
   )
 }
