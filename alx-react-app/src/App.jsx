@@ -1,4 +1,4 @@
-import UserProfile from './components/UserProfile.jsx'
+import UserProfile from '../UserProfile.jsx'
 import Footer from './Footer.jsx'
 import MainContent from './MainContent.jsx'
 import Header from './Header.jsx';
@@ -10,6 +10,7 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+  setcount (count + 1); 
 
   return (
     <>
