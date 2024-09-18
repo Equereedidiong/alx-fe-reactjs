@@ -1,3 +1,4 @@
+import UserContext from './components/UserContext.js'
 import UserProfile from '../UserProfile.jsx'
 import Footer from './Footer.jsx'
 import MainContent from './MainContent.jsx'
@@ -40,6 +41,9 @@ function App() {
       <Footer />
       <MainContent />
       <UserProfile name="Alice" age="25" bio="Loves hiking and photography" />
+      <UserContext.Provider value = {userData}>
+         <ProfilePage />
+      </UserContext.Provider>
     </>
   )
 }
