@@ -1,3 +1,4 @@
+import Counter from './components/Counter.jsx'
 import UserProfile from './components/UserProfile.jsx'
 import Footer from './components/Footer.jsx'
 import MainContent from './components/MainContent.jsx'
@@ -16,7 +17,11 @@ function App() {
       <div>
         Create a new file called WelcomeMessage.jsx under src/components
         <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
+          <div style={{ display: 'flex', justifyContent: 'center'}}>
+
+            <img src={viteLogo} className="logo" alt="Vite logo" />
+
+          </div>
         </a>
         <a href="https://react.dev" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
@@ -38,6 +43,7 @@ function App() {
       <Header />
       <Footer />
       <MainContent />
+      <Counter />
       <UserProfile name="Alice" age="25" bio="Loves hiking and photography" />
     </>
   )
