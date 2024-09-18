@@ -9,14 +9,14 @@ function Counter () {
              
             <div style={{ padding: '6px'}}>
    
-             <button onClick = { () => setCount((count) => count + 1 )}> You Increased Count by {count} </button>
+             <button onClick = { () => setCount((count) => count + 1 )}> You Count Increment {count} </button>
 
             </div>
              
-             
+
             <div style={ {padding: '6px'}}>
    
-               <button onClick = { () => setCount((count)  => count - 1 )}> You decreased count by {count} </button>
+               <button onClick = { () => setCount((count)  => count - 1 )}> Your Count Decrement {count} </button>
 
             </div>
             
