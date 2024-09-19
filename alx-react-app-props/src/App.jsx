@@ -12,6 +12,8 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
   setcount (count + 1); 
+  
+  const userData = { name: "Jane Doe", email: "jane.doe@example.com" };
 
   return (
     <>
@@ -36,14 +38,18 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+
+      
       <WelcomeMessage />
       <Header />
       <Footer />
       <MainContent />
       <UserProfile name="Alice" age="25" bio="Loves hiking and photography" />
+      
       <UserContext.Provider value = {userData}>
          <ProfilePage />
       </UserContext.Provider>
+      
     </>
   )
 }
