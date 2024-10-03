@@ -14,20 +14,32 @@ function AddRecipeForm () {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+
+    <>
+
+     <form onSubmit={handleSubmit} style={{display: 'flex', justifyContent: 'center', marginInline: '10px' }}>
+     <div style={{display: 'flex', padding: '10px'}} >
       <input
         type="text"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
         placeholder="Title"
-      />
-      <textarea
-        value={description}
-        onChange={(e) => setDescription(e.target.value)}
-        placeholder="Description"
-      />
-      <button type="submit">Add Recipe</button>
-    </form>
+       />
+     </div>
+      
+     <div style={{display: 'flex', padding: '10px'}}>
+       <textarea
+         value={description}
+         onChange={(e) => setDescription(e.target.value)}
+         placeholder="Description"
+       />  
+     </div>
+          
+      <button type="submit" style={{}}>Add Recipe</button>
+    </form>        
+
+    </>
+
   );
 };
 
